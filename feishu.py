@@ -125,7 +125,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             print("send message error, code = ", code, ", msg =", rsp_dict.get("msg", ""))
 
 def run():
-    port = 8000
+    port = 8001
     server_address = ('', port)
     httpd = HTTPServer(server_address, RequestHandler)
     print("start.....")
